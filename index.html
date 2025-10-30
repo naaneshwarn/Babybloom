@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👶BABYBLOOM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(to right, orange, brown);
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .head {
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline;
+      margin-right: 20px;
+      font-size: 28px;
+      animation: colorChange 4s ease infinite alternate;
+    }
+    @keyframes colorChange {
+      0% { color: white; }
+      100% { color: yellow; }
+    }
+
+    .mother {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .mother img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      animation-name: float;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+@keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-40px); }
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .feature-box {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: zoomIn 1s ease forwards;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .feature-box h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 18px;
+    }
+
+    .counter {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .feature-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    .feature-box ul li {
+      font-size: 16px;
+      margin: 4px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.3);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <h1 class="head">👶BABYBLOOM</h1>
+      <ul>
+        <li>Home🏠 |</li>
+        <li>About Us 🤷‍♀️|</li>
+        <li>Services🏥 |</li>
+        <li>Contact☎️</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mother">
+    <img src="https://img.freepik.com/premium-photo/ai-generated-art-pregnant-woman-looking-down-expecting-new-baby_1871-1637.jpg?w=2000" alt="mother image">
+  </div>
+
+  <div class="features">
+    <div class="feature-box">
+      <h2>👩 Personalised Assistance</h2>
+      <p>Get expert advice tailored to your baby's needs.</p>
+    </div>
+
+    <div class="feature-box">
+      <h2>📅 Calendar</h2>
+      <p>Get your records and know about your checkups.</p>
+    </div>
+
+    <div class="feature-box">
+      <h2>🤱 Mother Care</h2>
+      <p>We will care for your baby and you too.</p>
+    </div>
+
+    <div class="feature-box steps counter">
+      <h2>👣 Step Counter</h2>
+      <p>Today's Steps:</p>
+      <div class="counter">3,245</div>
+    </div>
+
+    <div class="feature-box water tracker">
+      <h2>💧 Water Tracker</h2>
+      <p>Glasses Drunk Today:</p>
+      <div class="counter">6 / 8</div>
+    </div>
+
+    <div class="feature-box nutrition">
+      <h2>🥗 Nutrition Tracker</h2>
+      <p>Calories Consumed:</p>
+      <div class="counter">1,450 kcal</div>
+      <p>Daily Goal: 2,000 kcal</p>
+      <p>Remaining: 550 kcal</p>
+    </div>
+
+    <div class="feature-box sleep tracker">
+      <h2>😴 Sleep Tracker</h2>
+      <p>Last Night's Sleep:</p>
+      <div class="counter">7 hrs 30 mins</div>
+      <p>Quality: ⭐⭐⭐⭐☆ (Good)</p>
+    </div>
+
+    <div class="feature-box baby-development">
+      <h2>🧠 Baby Development</h2>
+      <p>Age:</p>
+      <div class="counter">8 months</div>
+      <p>Milestones Achieved:</p>
+      <ul>
+        <li>Sitting without support ✅</li>
+        <li>Responds to name ✅</li>
+        <li>Starting to crawl ⏳</li>
+      </ul>
+      <p>Next Goal: Crawling confidently</p>
+    </div>
+  </div>
+
+  <footer>
+    An work by code Wizards Pvt Ltd. All rights reserved. 👩‍💻👨‍💻
+  </footer>
+</body>
+</html>
